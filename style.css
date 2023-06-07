@@ -1,0 +1,28 @@
+.header {
+    background-color: #1F2937;
+}
+.logo {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    flex-shrink: 1;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #1F2937;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
