@@ -6,6 +6,11 @@ html,body
     padding: 0px; 
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .header {
     height: 80vh;
