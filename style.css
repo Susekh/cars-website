@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 /*Navbar part*/
@@ -26,9 +26,9 @@ body {
     box-sizing: border-box;
 }
 .logo {
-    width: 50px;
+    width: 55px;
     cursor: pointer;
-    border-radius: 45%;
+    border-radius: 10px;
     flex-shrink: 1;
     margin-top: 3%;
     
@@ -73,7 +73,7 @@ body {
     font-size: 18px;
     color: #E5E7EB;
 }
-button {
+.button-s {
     display: block;
     text-align: center;
     border: none;
@@ -91,33 +91,128 @@ button {
 }
 
 /*contents part*/
-.contents{
-    align-items: center;
+.contents {
+    display: flex;
+    flex-direction: column;
 }
-.contents h1 {
-    text-align: center;
-    
+.contents-heading {
+    padding: 30px;
+    font-size: 45px;
+    font-weight: 500px;
+    color: #1F2937;
 }
 .cars ul {
     display: flex;
-    list-style-type: none;
+    flex: 1;
+    
+    justify-content: space-around;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border: 8px solid #1F2937;
+    position: relative;
+    list-style: none;
+    border-radius: 20px;
+}
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+
 }
 
-.cars ul li img{
-    flex-shrink: 1;
-    width: 60%;
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #e5e7eb8a;
+    backdrop-filter: blur(5px);
+    border-radius: 11px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
     
+}
+.card:hover .card-body{
+    right: 0;
+}
+.card-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 500;
+}
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    padding: 10px;
+
 }
 
 /*Quote part*/
 .quote {
+    display: flex;
+    flex-direction: column;
     background-color: #E5E7EB;
-    height: 30vh;
+    
 }
 .quote p{
     font-size: 36px;
     font-style: italic;
-    color: #1d2b3e;
-    padding-left: 5%;
-    padding-top: 3%;
+    color: #1F2937;
+    font-weight: lighter;
+}
+.quote b {
+    padding-bottom: 30px;
+    padding-right: 250px;
+    text-align: right;
+
+}
+/* Sign Up part */
+.sign-up {
+    background-color: #3882F6;
+    margin: 70px 300px 70px 300px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.sign-items {
+    flex: 1;
+}
+
+.sign-text p {
+    color: white;
+    margin: 5px 0px 30px;
+}
+.sign-text h3{
+    color: white;
+    margin: 30px 0px 0px ;
+}
+
+.sign-button button {
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    padding: 10px ;
+    font-size: 15px;
+    background-color: #3882F6;
+}
+
+/* footer */
+
+.footer {
+    background-color: #1F2937;
+    color: #fff;
+    font-size: 11px;
+    padding: 7px;
 }
