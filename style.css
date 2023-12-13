@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -46,6 +52,13 @@ body {
     padding: 9px;
 }
 
+.links a:hover{
+    color: #3882F6;
+    background-color: #E5E7EB;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 /*Header contents*/
 
 .header-content {
@@ -81,7 +94,14 @@ body {
     color: white;
     border: 0;
     cursor: pointer;
+    font-size: 1rem;
 }
+.button-s:hover{
+    background-color: white;
+    color: #3882F6;
+    font-weight: bold;
+}
+
 .header-image img {
     width: 90%;
     height: 250px;
@@ -109,16 +129,19 @@ body {
     width: 250px;
     height: 350px;
     overflow: hidden;
-    border: 8px solid #1F2937;
+    padding: 1rem;
     position: relative;
     list-style: none;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
 }
 .card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 11px;
+    
 
 }
 
@@ -136,7 +159,6 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: 0.5s;
-    
 }
 .card:hover .card-body{
     right: 0;
@@ -200,12 +222,18 @@ body {
 
 .sign-button button {
     color: white;
-    border-color: white;
-    border-radius: 5px;
+    border: 2px solid white;
     padding: 10px ;
     font-size: 15px;
     background-color: #3882F6;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.sign-button button:hover{
+    background-color: white;
+    color: #3882F6;
+    font-weight: bold;
 }
 
 /* footer */
